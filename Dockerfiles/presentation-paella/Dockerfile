@@ -1,7 +1,7 @@
 FROM opencast/presentation:2.3.0
 MAINTAINER polimedia team <polim@upv.es>
 
-ENV PAELLA_TAG="5.1.7" \
+ENV PAELLA_TAG="5.1.8" \
 	PAELLA_REPO="https://github.com/polimediaupv/paella-matterhorn.git" \
 	PAELLA_SRC="/usr/src/paella-opencast"
 
