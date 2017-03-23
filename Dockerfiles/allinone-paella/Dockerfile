@@ -1,4 +1,4 @@
-FROM opencast/allinone:latest
+FROM opencast/allinone:2.3.0
 MAINTAINER polimedia team <polim@upv.es>
 
 ENV PAELLA_TAG="5.1.7" \

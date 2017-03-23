@@ -1,4 +1,4 @@
-FROM opencast/adminpresentation:latest
+FROM opencast/adminpresentation:2.3.0
 MAINTAINER polimedia team <polim@upv.es>
 
 ENV PAELLA_TAG="5.1.7" \
