@@ -36,6 +36,9 @@ RUN	apk add --no-cache --virtual .build-deps \
     && cat ${OPENCAST_HOME}/etc/security/mh_default_org.xml | sed -e "s/<!-- Everything else is for the admin users -->/<!-- Paella -->\n    <sec:intercept-url pattern=\"\/paella\/ui\/auth.html\" access=\"ROLE_USER\" \/>\n    <sec:intercept-url pattern=\"\/paella\/ui\/**\" access=\"ROLE_ANONYMOUS\" \/>\n\n    <!-- Everything else is for the admin users -->/" > /tmp/mh_default_org.xml \
     && mv /tmp/mh_default_org.xml ${OPENCAST_HOME}/etc/security/mh_default_org.xml \
     \
+    && cat ${OPENCAST_HOME}/etc/org.opencastproject.organization-mh_default_org.cfg  | sed -e "s/prop.player=\/engage\/theodul\/ui\/core.html/prop.player=\/paella\/ui\/watch.html/" > /tmp/org.opencastproject.organization-mh_default_org.cfg \
+    && mv /tmp/org.opencastproject.organization-mh_default_org.cfg ${OPENCAST_HOME}/etc/org.opencastproject.organization-mh_default_org.cfg \
+    \
      # Cleanup
     && apk del --no-cache .build-deps \
     && rm -rf "${PAELLA_SRC}" /tmp/* ~/.m2 ~/.npm ~/.node-gyp /usr/lib/node_modules
