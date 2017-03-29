@@ -1,5 +1,13 @@
 FROM opencast/presentation:2.3.0
-MAINTAINER polimedia team <polim@upv.es>
+
+LABEL maintainer="polimedia team <polim@upv.es>" \
+      org.label-schema.schema-version="1.0" \
+      org.label-schema.name="opencast-presentation-paella" \
+      org.label-schema.description="Opencast image for the presentation distribution (with paella bundle)" \
+      org.label-schema.url="http://www.opencast.org/" \
+      org.label-schema.vcs-url="https://github.com/polimediaupv/opencast-paella-docker" \
+      org.label-schema.vendor="Universitat Politècnica de València"
+
 
 ENV PAELLA_TAG="5.1.8" \
 	PAELLA_REPO="https://github.com/polimediaupv/paella-matterhorn.git" \
