@@ -11,5 +11,5 @@ env:
   - DIST=adminpresentation-paella
   
 script:
-  - cd dockerfiles/${DIST}
+  - cd Dockerfiles/${DIST}
   - IMAGE_NAME=opencast-${DIST} ./hooks/build
