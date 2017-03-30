@@ -8,8 +8,8 @@ LABEL maintainer="polimedia team <polim@upv.es>" \
       org.label-schema.usage="https://github.com/polimediaupv/opencast-paella-docker/blob/$IMAGE_TAG/README.md" \
       org.label-schema.url="http://www.opencast.org/" \
       org.label-schema.vcs-url="https://github.com/polimediaupv/opencast-paella-docker" \
-      org.label-schema.vcs-ref="$VCS_REF"" \
-      org.label-schema.vendor="Universitat Politècnica de València"
+      org.label-schema.vcs-ref="$VCS_REF" \
+      org.label-schema.vendor="Universitat Politècnica de València" \
       org.label-schema.docker.debug="docker exec -it $IMAGE_NAME sh" \
       org.label-schema.docker.cmd.help="docker run --rm $IMAGE_NAME:$IMAGE_TAG app:help"
 
