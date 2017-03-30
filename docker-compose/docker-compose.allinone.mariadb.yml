@@ -39,7 +39,7 @@ services:
       - ./assets/activemq.xml:/opt/activemq/conf/activemq.xml:ro
 
   opencast:
-    image: polimediaupv/opencast-allinone-paella:2.3.1
+    image: polimediaupv/opencast-allinone-paella:2.3.2
     environment:
       - ORG_OPENCASTPROJECT_SERVER_URL=http://${HOSTIP:-localhost}:8080
       - ORG_OPENCASTPROJECT_SECURITY_ADMIN_USER=admin

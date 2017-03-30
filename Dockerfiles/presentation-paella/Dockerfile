@@ -1,4 +1,4 @@
-FROM opencast/presentation:2.3.1
+FROM opencast/presentation:2.3.2
 
 LABEL maintainer="polimedia team <polim@upv.es>" \
       org.label-schema.schema-version="1.0" \
