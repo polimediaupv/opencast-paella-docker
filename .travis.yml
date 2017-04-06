@@ -1,0 +1,15 @@
+---
+
+sudo: required
+
+services:
+  - docker
+
+env:
+  - DIST=allinone-paella
+  - DIST=presentation-paella
+  - DIST=adminpresentation-paella
+  
+script:
+  - cd Dockerfiles/${DIST}
+  - IMAGE_NAME=opencast-${DIST} ./hooks/build
