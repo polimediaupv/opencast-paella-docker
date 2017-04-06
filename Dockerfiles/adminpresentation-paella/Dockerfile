@@ -20,7 +20,7 @@ LABEL maintainer="polimedia team <polim@upv.es>" \
       org.label-schema.build-date="$BUILD_DATE"
       
 
-ENV PAELLA_TAG="5.1.8" \
+ENV PAELLA_TAG="5.1.10" \
 	PAELLA_REPO="https://github.com/polimediaupv/paella-matterhorn.git" \
 	PAELLA_SRC="/usr/src/paella-opencast"
 
